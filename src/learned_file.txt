@@ -1,0 +1,27 @@
+1. Ways of using map helper function
+    Menyra 1:
+        array.map( () => {
+        return (
+            div
+                );
+                }
+    Menyra 2:
+        array.map( () => (
+        div
+         ))
+
+2- Perdorimi per ruajtjen e gjendjes se state:
+        1- setState function
+            state = {
+                 modal: false
+                    }
+             openModal = () => this.setState({modal: true});
+             <Modal basic
+               open={modal}>
+        2- HOOK: useState
+            const [open, setOpen] = React.useState(false)
+            <Modal
+            onOpen={() => setOpen(true)}
+            open={open}
+            trigger={<Button>Show Modal</Button>}
+            >
